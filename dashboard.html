@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #00008B;
+            color: white;
+            font-family: monospace;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .main-table th {
+            background-color: #00008B;
+            color: #00A699;
+            text-align: left;
+            padding: 5px;
+            border: 1px solid #00A699;
+        }
+
+        .main-table td {
+            padding: 5px;
+            border: 1px solid #00A699;
+        }
+
+        .dashboard-section {
+            margin-bottom: 20px;
+        }
+
+        .totals {
+            text-align: right;
+            border: 1px solid #00A699;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    
+    <div class="dashboard-section">
+        <h2>Registros de Usuarios</h2>
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Juan Pérez</td><td>juan@example.com</td><td>Admin</td></tr>
+                <tr><td>2</td><td>María López</td><td>maria@example.com</td><td>Usuario</td></tr>
+                <tr><td>3</td><td>Pedro García</td><td>pedro@example.com</td><td>Moderador</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Productos</h2>
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>101</td><td>Teclado Mecánico</td><td>Electrónica</td><td>$45.00</td><td>15</td></tr>
+                <tr><td>102</td><td>Mouse Gamer</td><td>Electrónica</td><td>$25.00</td><td>30</td></tr>
+                <tr><td>103</td><td>Monitor 24"</td><td>Electrónica</td><td>$200.00</td><td>10</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="dashboard-section">
+        <h2>Ventas</h2>
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>5001</td><td>Juan Pérez</td><td>Teclado Mecánico</td><td>2</td><td>$90.00</td></tr>
+                <tr><td>5002</td><td>María López</td><td>Mouse Gamer</td><td>1</td><td>$25.00</td></tr>
+                <tr><td>5003</td><td>Pedro García</td><td>Monitor 24"</td><td>1</td><td>$200.00</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="totals">
+        <div>Total de Ventas: $315.00</div>
+        <div>Productos en Stock: 55</div>
+    </div>
+</body>
+</html>

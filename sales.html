@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #00008B;
+            color: white;
+            font-family: monospace;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .main-table th {
+            background-color: #00008B;
+            color: #00A699;
+            text-align: left;
+            padding: 5px;
+            border: 1px solid #00A699;
+        }
+
+        .main-table td {
+            padding: 5px;
+            border: 1px solid #00A699;
+        }
+
+        .input-field {
+            background-color: #00A699;
+            border: none;
+            color: white;
+            padding: 2px 5px;
+        }
+
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .totals {
+            text-align: right;
+            border: 1px solid #00A699;
+            padding: 10px;
+        }
+
+        .function-keys {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #00008B;
+            padding: 10px;
+            border-top: 1px solid #00A699;
+        }
+
+        .function-key {
+            color: #A401A4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table class="main-table">
+        <thead>
+            <tr>
+                <th>Line</th>
+                <th>Pieces</th>
+                <th>Description</th>
+                <th>Stock Number</th>
+                <th>Price</th>
+                <th>Amount</th>
+                <th>Tax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>COLOR KEY ONE SIDED</td>
+                <td>14295</td>
+                <td>2.92</td>
+                <td>14.95</td>
+                <td>8.750%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1</td>
+                <td>RUBBER GRIP DOMESTIC KEY</td>
+                <td>60008</td>
+                <td>4.29</td>
+                <td>4.29</td>
+                <td>8.750%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>ALL ABOVE REDUCED CA</td>
+                <td>-1</td>
+                <td>-5.00</td>
+                <td>-5.00</td>
+                <td>0.000%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1</td>
+                <td>MASTER RING</td>
+                <td>88888</td>
+                <td>3.00</td>
+                <td>3.00</td>
+                <td>0.000%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="bottom-section">
+        <div class="transaction-info">
+            <h3>DALE</h3>
+            <div>Description: <input type="text" class="input-field" /></div>
+            <div>Inventory count: <input type="text" class="input-field" /></div>
+            <div>PURCHASE #0768</div>
+            <div>
+                Stock Number: <input type="text" class="input-field" />
+                Price: <input type="text" class="input-field" value="0.00" />
+                Quantity: <input type="text" class="input-field" value="0" />
+                Tax Rate: <input type="text" class="input-field" value="0.000" />
+            </div>
+        </div>
+
+        <div class="totals">
+            <div>Sub Total: 22.08</div>
+            <div>Tax: 1.93</div>
+            <div>Total: 24.01</div>
+        </div>
+    </div>
+
+    <div class="function-keys">
+        <span class="function-key">F1</span> Stock table 
+        <span class="function-key">F3</span> Discount 
+        <span class="function-key">F5</span> Void 
+        <span class="function-key">F6</span> Park 
+        <span class="function-key">F7</span> Change Tax 
+        Press <span class="function-key">[=]</span> to total
+    </div>
+</body>
+</html>

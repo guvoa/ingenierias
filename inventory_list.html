@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #00008B;
+            color: white;
+            font-family: monospace;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #00A699;
+            padding-bottom: 10px;
+        }
+
+        .search-box {
+            background-color: #00A699;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            width: 200px;
+        }
+
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .main-table th {
+            background-color: #00008B;
+            color: #00A699;
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #00A699;
+        }
+
+        .main-table td {
+            padding: 8px;
+            border: 1px solid #00A699;
+        }
+
+        .main-table tr:hover {
+            background-color: #000066;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #00A699;
+        }
+
+        .function-keys {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #00008B;
+            padding: 10px;
+            border-top: 1px solid #00A699;
+        }
+
+        .function-key {
+            color: #A401A4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>INVENTORY LIST</h2>
+        <input type="text" class="search-box" placeholder="Search products...">
+    </div>
+
+    <table class="main-table">
+        <thead>
+            <tr>
+                <th>Stock Number</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Tax Rate</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>14295</td>
+                <td>COLOR KEY ONE SIDED</td>
+                <td>KEYS</td>
+                <td>2.92</td>
+                <td>150</td>
+                <td>8.750%</td>
+                <td>IN STOCK</td>
+            </tr>
+            <tr>
+                <td>60008</td>
+                <td>RUBBER GRIP DOMESTIC KEY</td>
+                <td>KEYS</td>
+                <td>4.29</td>
+                <td>85</td>
+                <td>8.750%</td>
+                <td>IN STOCK</td>
+            </tr>
+            <tr>
+                <td>88888</td>
+                <td>MASTER RING</td>
+                <td>ACCESSORIES</td>
+                <td>3.00</td>
+                <td>200</td>
+                <td>0.000%</td>
+                <td>IN STOCK</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>BASIC KEY BLANK</td>
+                <td>KEYS</td>
+                <td>1.99</td>
+                <td>0</td>
+                <td>8.750%</td>
+                <td>OUT OF STOCK</td>
+            </tr>
+            <tr>
+                <td>33557</td>
+                <td>KEY CHAIN HOLDER</td>
+                <td>ACCESSORIES</td>
+                <td>2.50</td>
+                <td>45</td>
+                <td>8.750%</td>
+                <td>LOW STOCK</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <span>Page 1 of 5</span>
+        <div>
+            <span>Items per page: 5</span>
+            <span>Total items: 25</span>
+        </div>
+    </div>
+
+    <div class="function-keys">
+        <span class="function-key">F1</span> Add New 
+        <span class="function-key">F2</span> Edit 
+        <span class="function-key">F3</span> Delete 
+        <span class="function-key">F4</span> Export 
+        <span class="function-key">F5</span> Print 
+        <span class="function-key">F6</span> Categories 
+        Press <span class="function-key">[ESC]</span> to return
+    </div>
+</body>
+</html>

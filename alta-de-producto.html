@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #00008B;
+            color: white;
+            font-family: monospace;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header {
+            color: #00A699;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #00A699;
+            padding-bottom: 10px;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .form-section {
+            border: 1px solid #00A699;
+            padding: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #00A699;
+            margin-bottom: 5px;
+        }
+
+        .input-field {
+            background-color: #00A699;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+        }
+
+        select.input-field {
+            width: 100%;
+        }
+
+        .function-keys {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #00008B;
+            padding: 10px;
+            border-top: 1px solid #00A699;
+        }
+
+        .function-key {
+            color: #A401A4;
+            font-weight: bold;
+        }
+
+        .required::after {
+            content: " *";
+            color: #ff4444;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>ALTA DE PRODUCTO</h2>
+        <div>USUARIO: ADMINISTRADOR</div>
+        <div>FECHA: 2025-01-05</div>
+    </div>
+
+    <div class="form-container">
+        <div class="form-section">
+            <h3>Información Básica</h3>
+            <div class="form-group">
+                <label class="required">Código de Producto:</label>
+                <input type="text" class="input-field" maxlength="20"/>
+            </div>
+            <div class="form-group">
+                <label class="required">Descripción:</label>
+                <input type="text" class="input-field" maxlength="50"/>
+            </div>
+            <div class="form-group">
+                <label class="required">Categoría:</label>
+                <select class="input-field">
+                    <option value="">Seleccionar categoría</option>
+                    <option value="1">Llaves</option>
+                    <option value="2">Cerraduras</option>
+                    <option value="3">Accesorios</option>
+                    <option value="4">Herramientas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="required">Marca:</label>
+                <input type="text" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label>Modelo:</label>
+                <input type="text" class="input-field"/>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Información de Inventario</h3>
+            <div class="form-group">
+                <label class="required">Precio de Compra:</label>
+                <input type="number" step="0.01" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label class="required">Precio de Venta:</label>
+                <input type="number" step="0.01" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label class="required">Stock Mínimo:</label>
+                <input type="number" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label class="required">Stock Actual:</label>
+                <input type="number" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label class="required">Tasa de Impuesto (%):</label>
+                <input type="number" step="0.01" class="input-field" value="8.750"/>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Información Adicional</h3>
+            <div class="form-group">
+                <label>Ubicación en Almacén:</label>
+                <input type="text" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label>Código de Barras:</label>
+                <input type="text" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label>Proveedor Principal:</label>
+                <input type="text" class="input-field"/>
+            </div>
+            <div class="form-group">
+                <label>Notas:</label>
+                <input type="text" class="input-field"/>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Control de Sistema</h3>
+            <div class="form-group">
+                <label>Estado:</label>
+                <select class="input-field">
+                    <option value="1">Activo</option>
+                    <option value="0">Inactivo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Fecha de Alta:</label>
+                <input type="text" class="input-field" value="2025-01-05" readonly/>
+            </div>
+            <div class="form-group">
+                <label>Usuario Creación:</label>
+                <input type="text" class="input-field" value="ADMINISTRADOR" readonly/>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-keys">
+        <span class="function-key">F1</span> Guardar 
+        <span class="function-key">F2</span> Limpiar 
+        <span class="function-key">F3</span> Buscar 
+        <span class="function-key">F4</span> Duplicar 
+        <span class="function-key">F5</span> Imprimir 
+        <span class="function-key">ESC</span> Salir
+    </div>
+</body>
+</html>
