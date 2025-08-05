@@ -10,6 +10,6 @@
     </ul>
     
 </nav>
-<div class="logo-container" style="align-items: center; justify-content: center; margin-bottom: 10px; width: 100%;">
+<!-- <div class="logo-container" style="align-items: center; justify-content: center; margin-bottom: 10px; width: 100%;">
     <img class="logo" src="../assets/img/logo_ingenierias.png" alt="Logo Ingenierías" style="height:47px; vertical-align:middle; margin-right:14px;">
-</div>
+</div> -->

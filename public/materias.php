@@ -21,7 +21,7 @@ $total_paginas = ceil($data['total'] / $por_pagina);
 <div class="materias-layout">
     
     <aside class="buscador-lateral">
-        <h3>Buscar Materias por:</h3>
+        <h3>Buscar:</h3>
         <form id="form-filtro-materias" onsubmit="return false;">
             <label for="carrera_id">Carrera</label>
             <select id="carrera_id" name="carrera_id" onchange="filtrarMaterias()">

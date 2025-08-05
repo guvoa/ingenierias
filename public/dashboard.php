@@ -1,7 +1,6 @@
 <?php
 require_once('../middleware/auth.php');
 $seccion_activa = 'dashboard';
-include('../includes/nav.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +9,7 @@ include('../includes/nav.php');
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <?php include('../includes/navbar.php'); ?>
+    <?php include('../includes/nav.php'); ?>
     <div style="padding: 30px 15px;">
         <h1>Bienvenido, <?php echo $_SESSION['nombre'] ?? $_SESSION['user']; ?>.</h1>
         <p>Este es el panel principal del sistema <strong><?php echo APP_NAME; ?></strong>.</p>
